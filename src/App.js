@@ -10,19 +10,22 @@ function App() {
    <BrowserRouter>
     <div className="App">
 
-      <Route path="/projects" component={Projects}/>
-      <Route path="/cv" component={Cv}/>
       
       <div className="navigation">
-        <img src={logo} className="logo-image" alt="Logo Image"/>
-        <div className="navigation-sub">
+        <img src={logo} className="logo-image" alt="flower logo"/>
+
+          <div className="navigation-sub">
 
           <Link to="/projects" className="item">Projects</Link>
           <Link to="/cv" className="item">CV</Link>
 
+          </div>
         </div>
       </div>
-    </div>
+
+      <Route path="/projects" component={Projects}/>
+      <Route path="/cv" component={Cv}/>
+
    </BrowserRouter>
   );
 }
